@@ -7,6 +7,7 @@ services:
     environment:
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
     container_name: tricount-rat-postgres
+    user: 1000:1000
     volumes:
       - ./pgdata:/var/lib/postgresql/data
     ports:
@@ -17,17 +18,19 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: tricount-rat-app
+    user: 1000:1000
     ports:
       - '3000:3000'
     depends_on:
       - db
     volumes:
-      - ./src:/app/src
+      - .:/app
 
   pgadmin:
     image: dpage/pgadmin4
+    user: 1000:1000
     restart: always
-    container_name: tricount-rat-postgres-pgadmin4
+    container_name: tricount-rat-pgadmin4
     environment:
       - PGADMIN_DEFAULT_EMAIL=${PGADMIN_DEFAULT_EMAIL}
       - PGADMIN_DEFAULT_PASSWORD=${PGADMIN_DEFAULT_PASSWORD}

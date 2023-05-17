@@ -1,6 +1,6 @@
 # TricountRat
 
-Cette appplication est basé sur les fonctionnalités simplifiés de [Tricount](https://www.tricount.com/fr/faire-les-comptes-entre-amis).
+Cette appplication est basée sur les fonctionnalités simplifiés de [Tricount](https://www.tricount.com/fr/faire-les-comptes-entre-amis).
 
 ## Pré-requis
 
@@ -11,7 +11,7 @@ Il vous faudra donc au préalable avoir [docker](https://docs.docker.com/engine/
 
 ### Définition des variables d'environnement.
 
-De manière à utiliser vos propres variables d'envionnement il est nécéssaire de redéfinir les variables présentent dans le fichier `.env.example` dans un nouveau fichier `.env` avec les valeurs de votere choix.
+De manière à utiliser vos propres variables d'envionnement il est nécéssaire de redéfinir les variables présentent dans le fichier `.env.example` dans un nouveau fichier `.env` avec des valeurs au choix.
 
 ## Installation
 
