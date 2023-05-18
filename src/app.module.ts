@@ -10,7 +10,18 @@ import { ExpenditureCategoryService } from './expenditure-category/expenditure-c
 import { ExpenditureCategoryModule } from './expenditure-category/expenditure-category.module';
 
 @Module({
-  imports: [PrismaModule, ConfigModule.forRoot({ isGlobal: true }), UserModule, ExpenditureModule, ExpenditureCategoryModule],
-  providers: [PrismaService, UserService, ExpenditureService, ExpenditureCategoryService],
+  imports: [
+    ConfigModule.forRoot({ isGlobal: true }),
+    PrismaModule,
+    UserModule,
+    ExpenditureModule,
+    ExpenditureCategoryModule
+  ],
+  providers: [
+    PrismaService,
+    UserService,
+    ExpenditureService,
+    ExpenditureCategoryService
+  ],
 })
 export class AppModule { }
