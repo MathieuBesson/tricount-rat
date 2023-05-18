@@ -28,7 +28,6 @@ services:
 
   pgadmin:
     image: dpage/pgadmin4
-    user: 1000:1000
     restart: always
     container_name: tricount-rat-pgadmin4
     environment:
