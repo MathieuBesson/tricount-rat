@@ -35,8 +35,8 @@ lerna-debug.log*
 !.vscode/extensions.json
 
 # Docker
-
-/pgdata
+pgdata/*
+!pgdata/.gitkeep
 
 # env
 .env

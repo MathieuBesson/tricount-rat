@@ -7,7 +7,6 @@ services:
     environment:
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
     container_name: tricount-rat-postgres
-    user: 1000:1000
     volumes:
       - ./pgdata:/var/lib/postgresql/data
     ports:
