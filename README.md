@@ -65,22 +65,22 @@ Pour la partie API de ce projet il nous à été imposé d'utiliser le langage n
 
 Les choix techniques pour ce projet sont les suivants : 
 
-- **Framework backend : Nest.js**
-    - Framework nodejs modulaire, avec une architecture basé sur les modules avec une structuration simple et réutilisable permettant la maintenabilité, la scalabilité et la lisibilité du code.
-    - Il utilise Typescript permettant une meilleure robustesse, une meilleur auto-complétion et une réduction accrue des erreurs et bugs potentiels
-    - De plus Nest est basé sur le famework express.js qui est connu pour ses performances élevées. De plus la gestion de l'asyncrhone est aussi un point important qui permet de gérer efficacement les requêtes simultanées.
+**Framework backend : Nest.js**
+ - Framework nodejs modulaire, avec une architecture basé sur les modules avec une structuration simple et réutilisable permettant la maintenabilité, la scalabilité et la lisibilité du code.
+ - Il utilise Typescript permettant une meilleure robustesse, une meilleur auto-complétion et une réduction accrue des erreurs et bugs potentiels
+ - De plus Nest est basé sur le famework express.js qui est connu pour ses performances élevées. De plus la gestion de l'asyncrhone est aussi un point important qui permet de gérer efficacement les requêtes simultanées.
 
-- **SGBDR : PostgreSQL**
-    - PostgreSQL est réputé pour être l'un des SGBDR les plus performants, y compris avec des grandes quantités de données. Il utilise des techniques avancées d'optimisation des requêtes, telles que l'optimisation de requêtes, la mise en cache, l'indexation avancée, etc.
-    - De plus Postgres est réputé pour sa fiabilité et sa robustesse. Il garantit l'intégrité des données en utilisant des contraintes, des règles et des transactions ACID (Atomicité, Cohérence, Isolation, Durabilité). Cela assure que les données stockées dans la base de données restent cohérentes et fiables.
+**SGBDR : PostgreSQL**
+ - PostgreSQL est réputé pour être l'un des SGBDR les plus performants, y compris avec des grandes quantités de données. Il utilise des techniques avancées d'optimisation des requêtes, telles que l'optimisation de requêtes, la mise en cache, l'indexation avancée, etc.
+ - De plus Postgres est réputé pour sa fiabilité et sa robustesse. Il garantit l'intégrité des données en utilisant des contraintes, des règles et des transactions ACID (Atomicité, Cohérence, Isolation, Durabilité). Cela assure que les données stockées dans la base de données restent cohérentes et fiables.
 
-- **ORM : Prisma**
-    - Prisma simplifie considérablement l'interaction avec la base de données. Il offre une interface de programmation (API) intuitive qui permet d'écrire des requêtes de base de données de manière déclarative à l'aide d'une syntaxe simple et efficace.
-    - L'utilisation d'un ORM facilite la mise en œuvre de bonnes pratiques en matière de sécurité des données. Il utilise des requêtes paramétrées pour éviter les vulnérabilités d'injection SQL et garantire la sécurité et l'intégrité des données. 
+**ORM : Prisma**
+ - Prisma simplifie considérablement l'interaction avec la base de données. Il offre une interface de programmation (API) intuitive qui permet d'écrire des requêtes de base de données de manière déclarative à l'aide d'une syntaxe simple et efficace.
+ - L'utilisation d'un ORM facilite la mise en œuvre de bonnes pratiques en matière de sécurité des données. Il utilise des requêtes paramétrées pour éviter les vulnérabilités d'injection SQL et garantire la sécurité et l'intégrité des données. 
 
-- **Conteneurisation : Docker**
-    - Docker permet d'encapsuler l'application, ses dépendances et sa configuration dans un conteneur léger et autonome.
-    - Docker assure une isolation complète de l'environnement d'exécution et garanti que l'API fonctionne de manière cohérente et similaire quel que soit l'hôte. Les portabilité des conteneurs garantie sont éxécution sur n'importe quel environnements, tels que des machines locales, des serveurs de développement ou des infrastructures cloud.
+**Conteneurisation : Docker**
+ - Docker permet d'encapsuler l'application, ses dépendances et sa configuration dans un conteneur léger et autonome.
+ - Docker assure une isolation complète de l'environnement d'exécution et garanti que l'API fonctionne de manière cohérente et similaire quel que soit l'hôte. Les portabilité des conteneurs garantie sont éxécution sur n'importe quel environnements, tels que des machines locales, des serveurs de développement ou des infrastructures cloud.
 
 
 ### Explication de l'architecture du projet
@@ -109,26 +109,26 @@ Le dossier `/helpers` contient tous les fonctions utilitaires pouvants être uti
 Le dossier `/prisma` permet lui de configurer l'accès de l'application à la BDD grâce à Prisma et de permettre l'utilisation du module dans toute l'application. 
 
 Les dossiers `expenditure`, `expenditure-category` et `user` ont tous la même architecture avec les fichiers suivants : `xxx.controller.ts`, `xxx.module.ts` et `xxx.service.ts` et les dossiers `dto` et `entities`. 
-    - Le fichier `module` permet de définir les différents modules du dossier
-    - Le fichier `service` regroupe toutes les fonctions intéragissant avec Prisma et donc avec la BDD
-    - Le fichier `controller` sert de passe plat entre le client et les différentes requêtes de ressources de l'API
-    - Le dossier `dto` contenant des fichiers de DTO permettant de définir et valider la structure des objets reçus du client
-    - Le dossier `entities` contient les objets nécéssaire au typage des sorties API de la ressource du dossier
+ - Le fichier `module` permet de définir les différents modules du dossier
+ - Le fichier `service` regroupe toutes les fonctions intéragissant avec Prisma et donc avec la BDD
+ - Le fichier `controller` sert de passe plat entre le client et les différentes requêtes de ressources de l'API
+ - Le dossier `dto` contenant des fichiers de DTO permettant de définir et valider la structure des objets reçus du client
+ - Le dossier `entities` contient les objets nécéssaire au typage des sorties API de la ressource du dossier
 
 ## Liens utiles
 
 Nest : 
-    - [Documentation](https://docs.nestjs.com/)
-    - [Github Repository](https://github.com/nestjs/nest)
+ - [Documentation](https://docs.nestjs.com/)
+ - [Github Repository](https://github.com/nestjs/nest)
 
 Prisma :
-    - [Documentation](https://www.prisma.io/docs)
-    - [Github Repository](https://github.com/prisma/prisma)
+ - [Documentation](https://www.prisma.io/docs)
+ - [Github Repository](https://github.com/prisma/prisma)
 
 Docker : 
-    - [Documentation](https://docs.docker.com/) 
-    - [Github Repository](https://github.com/docker)
+ - [Documentation](https://docs.docker.com/) 
+ - [Github Repository](https://github.com/docker)
 
 PostgreSQL : 
-    - [Documentation](https://www.postgresql.org/docs/current/)
-    - [Github Repository](https://github.com/postgres/postgres)
+ - [Documentation](https://www.postgresql.org/docs/current/)
+ - [Github Repository](https://github.com/postgres/postgres)
