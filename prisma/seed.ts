@@ -92,7 +92,7 @@ async function main() {
     let expenditureList = [];
     for (let i = 0; i < 15; i++) {
         expenditureList.push({
-            date: generateRandomDate("2023-01-01", "2023-12-31"),
+            date: generateRandomDate("2023-01-01", new Date().toISOString().slice(0, 10)),
             amount: randomNumber(3, 30),
             userId: randomNumber(1, userList.length),
             expenditureCategoryId: randomNumber(1, expenditureCategoryList.length),

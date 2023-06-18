@@ -115,6 +115,10 @@ Les dossiers `expenditure`, `expenditure-category` et `user` ont tous la même a
  - Le dossier `dto` contenant des fichiers de DTO permettant de définir et valider la structure des objets reçus du client
  - Le dossier `entities` contient les objets nécéssaire au typage des sorties API de la ressource du dossier
 
+## Warning sur le typage
+
+De nombreux warning sont présent dans le front du au faible typage TS du projet. Le manque de temps sur la fin du développement m'a empêcher de les solutionner  en configurant proprement le typage du projet
+
 ## Liens utiles
 
 Nest : 
