@@ -1,4 +1,4 @@
-# TricountRat
+# TricountRat API
 
 This application is based on the simplified features of [Tricount](https://www.tricount.com/fr/faire-les-comptes-entre-amis).
 
@@ -54,6 +54,10 @@ docker exec tricount-rat-app npm install {package-name}
 ```bash
 docker exec tricount-rat-app npm run start:prod
 ```
+
+## Frontend
+
+The frontend of **TricountRat** is a web application built with **Next.js**. You can find it here: [tricount-rat-front](https://github.com/MathieuBesson/tricount-rat-front).
 
 ## TODO
 
