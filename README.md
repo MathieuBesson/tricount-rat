@@ -55,9 +55,9 @@ docker exec tricount-rat-app npm install {package-name}
 docker exec tricount-rat-app npm run start:prod
 ```
 
-## Frontend
+## Front-end
 
-The frontend of **TricountRat** is a web application built with **Next.js**. You can find it here: [tricount-rat-front](https://github.com/MathieuBesson/tricount-rat-front).
+The front-end of **TricountRat** is a web application built with **Next.js**. You can find it here: [tricount-rat-front](https://github.com/MathieuBesson/tricount-rat-front).
 
 ## TODO
 
